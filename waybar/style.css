@@ -1,0 +1,91 @@
+* {
+  border: none;
+  border-radius: 12px;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(10, 15, 25, 0.75);
+  color: #cdd6f4;
+  border-radius: 16px;
+  margin: 6px 10px;
+}
+
+/* MODULE BASE */
+#clock,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#tray {
+  background: rgba(30, 45, 70, 0.6);
+  padding: 6px 12px;
+  margin: 4px 3px;
+  border-radius: 12px;
+  color: #dbeafe;
+}
+
+/* WORKSPACES */
+#workspaces {
+  background: rgba(30, 45, 70, 0.6);
+  margin: 4px;
+  padding: 4px;
+  border-radius: 14px;
+}
+
+#workspaces button {
+  padding: 4px 10px;
+  margin: 2px;
+  border-radius: 10px;
+  color: #93c5fd;
+  background: transparent;
+}
+
+#workspaces button.active {
+  background: #3b82f6;
+  color: #020617;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.8);
+}
+
+#workspaces button:hover {
+  background: rgba(96, 165, 250, 0.3);
+}
+
+/* WARN STATES */
+#battery.warning {
+  color: #facc15;
+}
+
+#battery.critical {
+  color: #ef4444;
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.8);
+}
+
+#network.disconnected {
+  color: #fb7185;
+}
+
+/* POWER BUTTON - icon red, background like other buttons */
+#custom-power {
+background: rgba(30, 30, 30, 0.6); /* same as your other buttons */
+border-radius: 12px;                /* same style as other buttons */
+padding: 6px 12px;                   /* same as other buttons */
+margin: 4px 3px;
+font-size: 25px;                     /* same as other buttons */
+font-weight: normal;
+color: #ef4444;                       /* RED icon */
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* subtle shadow like other buttons */
+}
+
+/* hover effect */
+#custom-power:hover {
+background: rgba(60, 60, 60, 0.85); /* same hover as other buttons */
+box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* subtle glow */
+}
+
+
+
+
